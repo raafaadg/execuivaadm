@@ -1,0 +1,4 @@
+numpy
+pillow
+pdf2image
+pytesseract
