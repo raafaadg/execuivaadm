@@ -137,9 +137,6 @@ def execute_OCR_1pg(image_input, file_output, template):
                 im.save("data_crop.jpg")
                 cropped = cv2.imread("data_crop.jpg")
               out.write("{0},{1}\n".format(COD, pytesseract.image_to_string(cropped)))
-              cv2.imshow(COD, cropped)
-              cv2.waitKey(0)
-              cv2.destroyAllWindows()
   out.close()
   f.close()
   return result
